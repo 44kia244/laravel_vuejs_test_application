@@ -1,5 +1,9 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router';
 
 window._ = require('lodash');
+window.Vue = Vue;
+Vue.use(VueRouter);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -10,7 +14,8 @@ window._ = require('lodash');
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
+    require('foundation-sites');
+    $(document).foundation()
 } catch (e) {}
 
 /**
