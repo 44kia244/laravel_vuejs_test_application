@@ -14,12 +14,12 @@
     "cross-env": "^3.2.3",
     "foundation-sites": "^6.3.1",
     "jquery": "^3.1.1",
-    "jquery-mobile": "^1.5.0-alpha.1",
     "laravel-mix": "0.*",
     "lodash": "^4.17.4",
     "vue": "^2.1.10",
     "vue-infinite-loading": "^2.1.1",
     "vue-router": "^2.5.2",
+    "vue-touch": "^2.0.0-beta.4",
     "vuex": "^2.3.1"
   }
 }
