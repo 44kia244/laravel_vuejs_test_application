@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 window._ = require('lodash');
 window.Vue = Vue;
+window.$ = window.jQuery = require('jquery');
 Vue.use(VueRouter);
 
 /**
@@ -12,10 +13,9 @@ Vue.use(VueRouter);
  */
 
 try {
-    window.$ = window.jQuery = require('jquery');
-
-    require('foundation-sites');
-    $(document).foundation()
+    $.getScript('/js/foundation.js', () => {
+        console.log('foundation loaded')
+    })
 } catch (e) {}
 
 /**
